@@ -1,0 +1,713 @@
+{
+	"info": {
+		"_postman_id": "5dd50c9f-2c9f-41db-a4dc-14f61f1b8b08",
+		"name": "FrontDesk Management System",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Room Allocation Module",
+			"item": [
+				{
+					"name": "Retrieve Today Check-In ",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "ffd67783-c985-4ebf-91e6-261ef43e3db5",
+								"exec": [
+									"pm.test(\"Successfully Retrieve all Today Check-In Entry\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/EzyHotel-war/webresources/customer/todayCheckIn",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"EzyHotel-war",
+								"webresources",
+								"customer",
+								"todayCheckIn"
+							]
+						},
+						"description": "http://localhost:8080/EzyHotel-war/webresources/customer/todayCheckIn"
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve Today Check-Out",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "22f30747-bbb4-4151-b739-c75c2b25f721",
+								"exec": [
+									"pm.test(\"Sucessfully Retrieve all Today Check-Out Entry\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/EzyHotel-war/webresources/customer/todayCheckOut",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"EzyHotel-war",
+								"webresources",
+								"customer",
+								"todayCheckOut"
+							]
+						},
+						"description": "http://localhost:8080/EzyHotel-war/webresources/customer/todayCheckOut"
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve All Customer",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "41156457-01de-4158-8581-a9a5f093dd9f",
+								"exec": [
+									"pm.test(\"Successfully Retrieve Customer Information\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/EzyHotel-war/webresources/customer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"EzyHotel-war",
+								"webresources",
+								"customer"
+							]
+						},
+						"description": "http://localhost:8080/EzyHotel-war/webresources/customer"
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve Cust Identity",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "fdd3ec7d-1f8b-4e7c-91e5-0debc4dd8f13",
+								"exec": [
+									"pm.test(\"Successfully retreive customer identity\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"//retrieveCustIdentity\r",
+									"pm.test(\"Retrieve Customer Identity\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    var identity = {custIdentity: \"S8872345T\"};\r",
+									"    pm.expect(jsonData['custIdentity']).to.eql(identity.custIdentity);\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/EzyHotel-war/webresources/customer/custId/S8872345T",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"EzyHotel-war",
+								"webresources",
+								"customer",
+								"custId",
+								"S8872345T"
+							]
+						},
+						"description": "http://localhost:8080/EzyHotel-war/webresources/customer/custId/S9002315A"
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve All Room Booking",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "de003980-d1e2-4d8c-bdce-ec7c9817f7e6",
+								"exec": [
+									"pm.test(\"Sucessfully retrieve all Room Bookings\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/EzyHotel-war/webresources/RoomBooking/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"EzyHotel-war",
+								"webresources",
+								"RoomBooking",
+								"1"
+							]
+						},
+						"description": "http://localhost:8080/EzyHotel-war/webresources/RoomBooking/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve All Room Number",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "38b6fda3-f43b-41d9-a11c-bfffd6da953a",
+								"exec": [
+									"pm.test(\"Successfully retrieve all rooms that are unoccupied and matches customer room type\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/EzyHotel-war/webresources/RoomBooking/getAllRoom/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"EzyHotel-war",
+								"webresources",
+								"RoomBooking",
+								"getAllRoom",
+								"1"
+							]
+						},
+						"description": "http://localhost:8080/EzyHotel-war/webresources/RoomBooking/getAllRoom/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Check In",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "fae28725-f1f3-4364-a649-14f8ed8e9553",
+								"exec": [
+									"pm.test(\"Check-In pass\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/EzyHotel-war/webresources/customer/checkIn/1/102",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"EzyHotel-war",
+								"webresources",
+								"customer",
+								"checkIn",
+								"1",
+								"102"
+							]
+						},
+						"description": "http://localhost:8080/EzyHotel-war/webresources/customer/checkIn/1/1001"
+					},
+					"response": []
+				},
+				{
+					"name": "Check Out",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "d640ccb0-1e50-46e9-bfab-b734b875e105",
+								"exec": [
+									"pm.test(\"Check-Out pass\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/EzyHotel-war/webresources/customer/checkout/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"EzyHotel-war",
+								"webresources",
+								"customer",
+								"checkout",
+								"1"
+							]
+						},
+						"description": "http://localhost:8080/EzyHotel-war/webresources/customer/checkout/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve Specific attributes for Booking",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1261002d-ecd5-4cb2-9805-00cfeb85cbec",
+								"exec": [
+									"pm.test(\"Sucessfully retrieve specific attributes at Room Bookings\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/EzyHotel-war/webresources/RoomBooking/custBooking/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"EzyHotel-war",
+								"webresources",
+								"RoomBooking",
+								"custBooking",
+								"1"
+							]
+						},
+						"description": "http://localhost:8080/EzyHotel-war/webresources/RoomBooking/custBooking/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve Room Booking for Edit",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "788f5927-6965-4c66-b6be-c4d6607db1d2",
+								"exec": [
+									"pm.test(\"Successfully retreive room bookings\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"//view bookings with status checked_in\r",
+									"//pm.test(\"Retrieve Room Booking\", function () {\r",
+									"//    var jsonData = pm.response.json();\r",
+									"//    var status = {roomStatus: \"CHECKED_IN\"};\r",
+									"//    pm.expect(jsonData[\"roomStatus\"]).to.eql(status.roomStatus);\r",
+									"//});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/EzyHotel-war/webresources/customer/viewBookings",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"EzyHotel-war",
+								"webresources",
+								"customer",
+								"viewBookings"
+							]
+						},
+						"description": "http://localhost:8080/EzyHotel-war/webresources/customer/viewBookings"
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve Room and Status",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "01e9d6b2-2372-465b-879b-4bcacbbca27e",
+								"exec": [
+									"pm.test(\"Successfully Retrieve All Rooms and its status\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/EzyHotel-war/webresources/RoomBooking/viewRoomStatus",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"EzyHotel-war",
+								"webresources",
+								"RoomBooking",
+								"viewRoomStatus"
+							]
+						},
+						"description": "http://localhost:8080/EzyHotel-war/webresources/RoomBooking/viewRoomStatus"
+					},
+					"response": []
+				},
+				{
+					"name": "View Calendar",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "413c852d-e535-4777-a285-5c46417ee0e8",
+								"exec": [
+									"pm.test(\"Successfully Retrieve Room Bookings for Calendar\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/EzyHotel-war/webresources/RoomBooking/viewCalendar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"EzyHotel-war",
+								"webresources",
+								"RoomBooking",
+								"viewCalendar"
+							]
+						},
+						"description": "http://localhost:8080/EzyHotel-war/webresources/RoomBooking/viewCalendar"
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve Invoice List",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "9730ab32-12c9-45a1-baea-42be5cbe7897",
+								"exec": [
+									"pm.test(\"Successfully Retrieve invoice List\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/EzyHotel-war/webresources/invoice/invoiceList",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"EzyHotel-war",
+								"webresources",
+								"invoice",
+								"invoiceList"
+							]
+						},
+						"description": "http://localhost:8080/EzyHotel-war/webresources/invoice/invoiceList"
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve invoice by Id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "e855f12d-22d8-4162-af65-ba12a0a0c8a1",
+								"exec": [
+									"pm.test(\"Successfully Retrieve invoice number\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/EzyHotel-war/webresources/invoice/invoice/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"EzyHotel-war",
+								"webresources",
+								"invoice",
+								"invoice",
+								"1"
+							]
+						},
+						"description": "http://localhost:8080/EzyHotel-war/webresources/invoice/invoice/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Payment for Specific Invoice",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "99f66f33-5c8d-4cc6-96ca-c5ade6d5dbc6",
+								"exec": [
+									"pm.test(\"Successfully update status of invoice to Paid\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/EzyHotel-war/webresources/invoice/paymentSucc/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"EzyHotel-war",
+								"webresources",
+								"invoice",
+								"paymentSucc",
+								"3"
+							]
+						},
+						"description": "http://localhost:8080/EzyHotel-war/webresources/invoice/paymentSucc/3"
+					},
+					"response": []
+				},
+				{
+					"name": "View Room Order Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/EzyHotel-war/webresources/RoomOrder/roomOrderList",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"EzyHotel-war",
+								"webresources",
+								"RoomOrder",
+								"roomOrderList"
+							]
+						},
+						"description": "http://localhost:8080/EzyHotel-war/webresources/RoomOrder/roomOrderList"
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve Room Orders by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/EzyHotel-war/webresources/RoomOrder/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"EzyHotel-war",
+								"webresources",
+								"RoomOrder",
+								"1"
+							]
+						},
+						"description": "http://localhost:8080/EzyHotel-war/webresources/RoomOrder/1"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

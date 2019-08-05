@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "85a98e7d-9705-4aa0-a4e7-24a8bc2a2eb0",
+		"name": "Loyalty Program Management Module",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Retrieve Loyalty Transactions by LoyaltyId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/EzyHotel-war/webresources/loyaltyTransactions/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EzyHotel-war",
+						"webresources",
+						"loyaltyTransactions",
+						"3"
+					]
+				},
+				"description": "This request is to retrieve all the loyalty transactions. May or may not be used on Customer Portal"
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve Customer Loyalties By Loyalty Program Tier",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2dcdcb40-a70b-4bcf-aceb-fae6c842fe00",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/EzyHotel-war/webresources/loyalties/retrieveCustomers/GOLD",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EzyHotel-war",
+						"webresources",
+						"loyalties",
+						"retrieveCustomers",
+						"GOLD"
+					]
+				},
+				"description": "This request uses a PathParam based on the Customer's Membership Type. In my DB, my customer is a GOLD member in the loyalty program."
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve Loyalty By CustomerId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/EzyHotel-war/webresources/loyalties/9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EzyHotel-war",
+						"webresources",
+						"loyalties",
+						"9"
+					]
+				},
+				"description": "This request retrieves the loyalty points that belongs to the specific customer."
+			},
+			"response": []
+		},
+		{
+			"name": "Deduct Loyalty Points Manually",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"customerId\" : 9,\n\t\"pointsToDeduct\" : 119\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/EzyHotel-war/webresources/loyalties/deductLoyaltyPoints",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EzyHotel-war",
+						"webresources",
+						"loyalties",
+						"deductLoyaltyPoints"
+					]
+				},
+				"description": "For manual update when the customer portal is down."
+			},
+			"response": []
+		}
+	]
+}

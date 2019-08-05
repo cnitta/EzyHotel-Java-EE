@@ -1,0 +1,834 @@
+{
+	"info": {
+		"_postman_id": "8bdbf116-af2c-404f-a81c-88849fa4681a",
+		"name": "Hotel Property Management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Room Types",
+			"item": [
+				{
+					"name": "Get All Room Types",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/EzyHotel-war/webresources/roomtypes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"EzyHotel-war",
+								"webresources",
+								"roomtypes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get A Room Type",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/EzyHotel-war/webresources/roomtypes/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"EzyHotel-war",
+								"webresources",
+								"roomtypes",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add A Room Type",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\n    \"name\": \"Sup\"\n    \n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/EzyHotel-war/webresource/roomtypes/hotel/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"EzyHotel-war",
+								"webresource",
+								"roomtypes",
+								"hotel",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update A Room Type",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\":hi}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/EzyHotel-war/webresources/roomtypes/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"EzyHotel-war",
+								"webresources",
+								"roomtypes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete A RoomType",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/EzyHotel-war/webresources/roomtypes/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"EzyHotel-war",
+								"webresources",
+								"roomtypes",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Room Asset",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Room Amenity",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Room Types By Hotel Id ",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/EzyHotel-war/webresources/roomtypes/query?hotelId=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"EzyHotel-war",
+								"webresources",
+								"roomtypes",
+								"query"
+							],
+							"query": [
+								{
+									"key": "hotelId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Hotel",
+			"item": [
+				{
+					"name": "Get All Hotels",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/EzyHotel-war/webresources/hotels",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"EzyHotel-war",
+								"webresources",
+								"hotels"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get A Hotel",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/EzyHotel-war/webresources/hotels/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"EzyHotel-war",
+								"webresources",
+								"hotels",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Hotel",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"address\": \"Jurong Road, Singapore. 122333\",\n    \"country\": \"Singapore\",\n    \"description\": \"Horizon Hotel is managed under Kent Ridge Hotel Group that aimed to provide exceptional services to guests for their fulfilling stay at all of their hotels.\",\n    \"email\": \"kentridge@krhg.com.sg\",\n    \"facilities\": [],\n    \"hotelURL\": \"horizonhotel.com.sg\",\n    \"name\": \"Joyful Hotel\",\n    \"pictures\": [],\n    \"policies\": [\n        \"Cancellation Policy: All confirmed reservations and payment made not cancelled at least two days prior to check-in date (2.00pm SGT two days prior to check-in date) will not be refunded. Cancellation received within the 48-hour period or “no show” will cost one night’s room and tax charge to be processed to the credit card on file.\",\n        \"Damage To Hotel Property: The Hotel reserves the right to charge guests the cost of repairing and rectifying damaged or soiling, caused by accident, deliberate, negligent or reckless act of guest to the Hotel’s property or structure.\",\n        \"Safe Deposit Box: Guests are encouraged to keep their valuables in the in-room safe. The Hotel shall not be liable for the loss of guest’s valuable items or money during their stay.\",\n        \"Pets: The Hotel do not allow pet on its premises except for guide dogs.\",\n        \"Pets: The Hotel do not allow pet on its premises except for guide dogs.\",\n        \"Age: Guests must be 18 years old and above with an identification to check-in. Guest who are under 18 years old must be accompanied by an adult. And the Hotel reserve the right to check the identification of guests.\",\n        \"Smoking: The hotel prohibits smoking in all of the hotel rooms. Guests found to be smoking or having smoked will be subjected of a $200 fine.\"\n    ],\n    \"rooms\": [],\n    \"services\": [\n        \"Fax & Photocopying: Our hotel offers photocopying and fax services. Please approach our reception\"\n    ],\n    \"staffs\": [],\n    \"telephoneNumber\": \"66774455\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/EzyHotel-war/webresources/hotels",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"EzyHotel-war",
+								"webresources",
+								"hotels"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update A Hotel",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"address\": \"1 Lower Kent Ridge Road Singapore. 119071\",\n    \"country\": \"Singapore\",\n    \"description\": \"Kent Ridge Hotel is managed under Kent Ridge Hotel Group that aimed to provide exceptional services to guests for their fulfilling stay at all of their hotels.\",\n    \"email\": \"kentridge@krhg.com.sg\",\n    \"facilities\": [],\n    \"hotelURL\": \"kentridgehotel.com.sg\",\n    \"name\": \"Kent Ridge Hotel\",\n    \"pictures\": [],\n    \"policies\": [\n        \"Cancellation Policy: All confirmed reservations and payment made not cancelled at least two days prior to check-in date (2.00pm SGT two days prior to check-in date) will not be refunded. Cancellation received within the 48-hour period or “no show” will cost one night’s room and tax charge to be processed to the credit card on file.\"\n    ],\n    \"rooms\": [],\n    \"services\": [\n        \"Fax & Photocopying: Our hotel offers photocopying and fax services. Please approach our reception\"\n    ],\n    \"staffs\": [],\n    \"telephoneNumber\": \"66778899\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/EzyHotel-war/webresources/hotels/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"EzyHotel-war",
+								"webresources",
+								"hotels",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete A Hotel",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/EzyHotel-war/webresources/hotels/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"EzyHotel-war",
+								"webresources",
+								"hotels",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Room To Hotel",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Room",
+			"item": [
+				{
+					"name": "Get All Rooms",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/EzyHotel-war/webresources/rooms",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"EzyHotel-war",
+								"webresources",
+								"rooms"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get A Room",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/EzyHotel-war/webresources/rooms/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"EzyHotel-war",
+								"webresources",
+								"rooms",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add A Room",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"devices\": [],\n    \"housekeepingRecords\": [],\n    \"maintenanceRecords\": [],\n    \"merchandiseOrders\": [],\n    \"priceRates\": [],\n    \"promotions\": [],\n    \"roomBooking\": [],\n    \"roomServiceOrders\": [],\n    \"roomUnitNumber\": 1003,\n    \"salesPackages\": [],\n    \"status\": \"Vacant\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/EzyHotel-war/webresources/rooms",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"EzyHotel-war",
+								"webresources",
+								"rooms"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update a Room",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete A Room",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/EzyHotel-war/webresources/rooms/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"EzyHotel-war",
+								"webresources",
+								"rooms",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Rooms by Hotel Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/EzyHotel-war/webresources/rooms/query?hotelId=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"EzyHotel-war",
+								"webresources",
+								"rooms",
+								"query"
+							],
+							"query": [
+								{
+									"key": "hotelId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Room Assets",
+			"item": [
+				{
+					"name": "Get All Room Assets",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/EzyHotel-war/webresources/room-assets",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"EzyHotel-war",
+								"webresources",
+								"room-assets"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Room Amenities",
+			"item": [
+				{
+					"name": "Get All Room Amenities",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/EzyHotel-war/webresources/room-amenities",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"EzyHotel-war",
+								"webresources",
+								"room-amenities"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Facility",
+			"item": [
+				{
+					"name": "Get all facilities",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/EzyHotel-war/webresources/facilities",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"EzyHotel-war",
+								"webresources",
+								"facilities"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get A Facility",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all facilities by Hotel Id ",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/EzyHotel-war/webresources/facilitiesInHotel",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"EzyHotel-war",
+								"webresources",
+								"facilitiesInHotel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add a facility",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \n   \"name\": \"test\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/EzyHotel-war/webresources/facilities",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"EzyHotel-war",
+								"webresources",
+								"facilities"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Facility With Hotel Id",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\":\"gym\"}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/EzyHotel-war/webresources/facilities/hotel/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"EzyHotel-war",
+								"webresources",
+								"facilities",
+								"hotel",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update a facility",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"area\": 350,\n    \"capacity\": [],\n    \"description\": \"With unparalleled views of the city, in a contemporary setting, the Fitness Centre features a squash court and a complete range of cardiovascular machines and weight-training equipment.\",\n    \"facFeature\": [\"Treadmill\",\"Rowing machine\",\"Cable crossover\",\"Smith machine\",\"Lat pulldown\"],\n    \"facStatus\": \"Active\",\n    \"facilityId\": 1,\n    \"facilityType\": \"Gym\",\n    \"name\": \"Gym\",\n    \"priceRates\": [],\n    \"promotions\": [],\n    \"reserveFacilities\": [],\n    \"salesPackages\": []\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/EzyHotel-war/webresources/facilities/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"EzyHotel-war",
+								"webresources",
+								"facilities",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a facility",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/EzyHotel-war/webresources/facilities/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"EzyHotel-war",
+								"webresources",
+								"facilities",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

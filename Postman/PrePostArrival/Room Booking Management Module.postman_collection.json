@@ -1,0 +1,230 @@
+{
+	"info": {
+		"_postman_id": "d9023a66-6167-4326-8ac2-a9ccf2dabd43",
+		"name": "Room Booking Management Module",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Room Booking By Reservation Number",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"reservationNumber\" : \"6B223C74\",\n\t\"email\" : \"bernicecpz@gmail.com\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/EzyHotel-war/webresources/onlineRoomBookings/getRoomBooking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EzyHotel-war",
+						"webresources",
+						"onlineRoomBookings",
+						"getRoomBooking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Room Booking - Individual Room Booking",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "112894a9-bf8a-40cb-89a2-8fc6b8c28ef8",
+						"exec": [
+							"pm.test(\"Status code is 201 (CREATED)\", function () {",
+							"    pm.response.to.have.status(201);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\" : \"Bernice\",\r\n    \"lastName\" : \"Choy\",\r\n    \"gender\": \"FEMALE\",\r\n    \"country\" : \"Singapore\",\r\n    \"custIdentity\" : \"S9631677E\",\r\n    \"email\" : \"bernicecpz@gmail.com\",\r\n    \"phoneNum\" : \"96953579\",\r\n    \"arrivalDate\" : \"20/01/2019 11:00\",\r\n    \"departureDate\" : \"23/01/2019 00:00\",\r\n    \"specialRequest\" : \"Give me 2 more towels\",\r\n    \"roomTypeCode\" : \"SUR\",\r\n    \"adultCount\" : 2,\r\n    \"childCount\" : 2,\r\n    \"custCardHolderName\" : \"Bernice Choy\",\r\n    \"hCustCreditCard\" : \"832FF200251444A3C55684A617A365CC12BEC9317D05BE65C96D92327087A18E5566\",\r\n    \"creditCardExpiryDate\" : \"2024-01\",\r\n\t\"priceRateTitle\": \"Standard rate\",\r\n    \"finalPrice\" : \"123.20\",\r\n    \"hotelName\" : \"Kent Ridge Hotel\",\r\n    \"isLogin\": \"false\",\r\n    \"bookingType\" : \"INDIVIDUAL_BOOKING\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/EzyHotel-war/webresources/onlineRoomBookings/createOnlineBooking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EzyHotel-war",
+						"webresources",
+						"onlineRoomBookings",
+						"createOnlineBooking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Room Booking - Book on Behalf Room Booking",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "112894a9-bf8a-40cb-89a2-8fc6b8c28ef8",
+						"exec": [
+							"pm.test(\"Status code is 201 (CREATED)\", function () {",
+							"    pm.response.to.have.status(201);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\" : \"Bernice\",\r\n    \"lastName\" : \"Choy\",\r\n    \"gender\": \"FEMALE\",\r\n    \"country\" : \"Singapore\",\r\n    \"custIdentity\" : \"S9631677E\",\r\n    \"email\" : \"bernicecpz@gmail.com\",\r\n    \"phoneNum\" : \"96953579\",\r\n    \"arrivalDate\" : \"15/02/2019 11:00\",\r\n    \"departureDate\" : \"20/02/2019 00:00\",\r\n    \"specialRequest\" : \"Give me 2 more towels\",\r\n    \"roomTypeCode\" : \"DEX\",\r\n    \"adultCount\" : 2,\r\n    \"childCount\" : 2,\r\n    \"custCardHolderName\" : \"Bernice Choy\",\r\n    \"hCustCreditCard\" : \"832FF200251444A3C55684A617A365CC12BEC9317D05BE65C96D92327087A18E5566\",\r\n    \"creditCardExpiryDate\" : \"2024-01\",\r\n\t\"priceRateTitle\": \"Standard rate\",\r\n    \"finalPrice\" : \"123.20\",\r\n    \"guestFirstName\" : \"Eugene\",\r\n    \"guestLastName\" : \"Choy\",\r\n    \"guestEmail\" : \"testerorbital@gmail.com\",\r\n    \"hotelName\" : \"Kent Ridge Hotel\",\r\n    \"isLogin\": \"false\",\r\n    \"bookingType\" : \"BOOK_ON_BEHALF_BOOKING\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/EzyHotel-war/webresources/onlineRoomBookings/createOnlineBooking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EzyHotel-war",
+						"webresources",
+						"onlineRoomBookings",
+						"createOnlineBooking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Room Booking - Group Room Booking",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "112894a9-bf8a-40cb-89a2-8fc6b8c28ef8",
+						"exec": [
+							"pm.test(\"Status code is 201 (CREATED)\", function () {",
+							"    pm.response.to.have.status(201);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\" : \"Bernice\",\r\n    \"lastName\" : \"Choy\",\r\n    \"gender\": \"FEMALE\",\r\n    \"country\" : \"Singapore\",\r\n    \"custIdentity\" : \"S9631677E\",\r\n    \"email\" : \"bernicecpz@gmail.com\",\r\n    \"phoneNum\" : \"96953579\",\r\n    \"arrivalDate\" : \"01/01/2019 11:00\",\r\n    \"departureDate\" : \"14/01/2019 00:00\",\r\n    \"specialRequest\" : \"Give me 5 more towels\",\r\n    \"adultCount\" : 2,\r\n    \"childCount\" : 2,\r\n    \"custCardHolderName\" : \"Bernice Choy\",\r\n    \"hCustCreditCard\" : \"832FF200251444A3C55684A617A365CC12BEC9317D05BE65C96D92327087A18E5566\",\r\n    \"creditCardExpiryDate\" : \"2024-01\",\r\n\t\"roomQuantityJson\" : \"{\\\"JUN\\\":7}\",\r\n    \"hotelName\" : \"Kent Ridge Hotel\",\r\n    \"isLogin\": \"false\",\r\n    \"bookingType\" : \"GROUP_BOOKING\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/EzyHotel-war/webresources/onlineRoomBookings/createOnlineBooking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EzyHotel-war",
+						"webresources",
+						"onlineRoomBookings",
+						"createOnlineBooking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Room Boking - Corp Booking",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2d2a2392-2333-42ae-a9eb-8d949f0ecc69",
+						"exec": [
+							"pm.test(\"Status code is 201 (CREATED)\", function () {",
+							"    pm.response.to.have.status(201);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\" : \"Bernice\",\r\n    \"lastName\" : \"Choy\",\r\n    \"gender\": \"FEMALE\",\r\n    \"country\" : \"Singapore\",\r\n    \"custIdentity\" : \"S9631677E\",\r\n    \"email\" : \"bernicecpz@gmail.com\",\r\n    \"organization\": \"JTA Corps\",\r\n    \"phoneNum\" : \"96953579\",\r\n    \"arrivalDate\" : \"20/03/2019 11:00\",\r\n    \"departureDate\" : \"26/03/2019 00:00\",\r\n    \"specialRequest\" : \"Give me 2 more towels\",\r\n    \"adultCount\" : 2,\r\n    \"childCount\" : 2,\r\n    \"custCardHolderName\" : \"Bernice Choy\",\r\n    \"hCustCreditCard\" : \"832FF200251444A3C55684A617A365CC12BEC9317D05BE65C96D92327087A18E5566\",\r\n    \"creditCardExpiryDate\" : \"2024-01\",\r\n\t\"roomQuantityJson\" : \"{\\\"EXE\\\":5,\\\"SUR\\\":20,\\\"PRE\\\":3}\",\r\n    \"hotelName\" : \"Kent Ridge Hotel\",\r\n    \"isLogin\": \"false\",\r\n    \"bookingType\" : \"CORP_BOOKING\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/EzyHotel-war/webresources/onlineRoomBookings/createOnlineBooking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EzyHotel-war",
+						"webresources",
+						"onlineRoomBookings",
+						"createOnlineBooking"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

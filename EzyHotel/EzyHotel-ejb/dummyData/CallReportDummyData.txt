@@ -1,0 +1,9 @@
+Avensys Consulting Pte Ltd,Singapore,2019-02-01,64539075,Convention Booking,Anmol Singh,Group and Banquet,Banquet size 200,Banquet leads
+Atlas Business Consulting Pte Ltd,Singapore,2019-02-03,90547822,Convention Booking,Joe Tan,Group and Banquet,Banquet size 200,Banquet leads
+Kenston Construction Pte Ltd,Singapore,2019-02-06,65533275,Room Booking,Victoria Lim,Room Only,Two Rooms,Room leads
+Crossroad Consulting Pte Ltd,Malaysia,2019-02-10,64431275,Room Booking,Layla Sim,Room Only,Two Rooms,Room leads
+PH Consulting Pte Ltd,Thailand,2019-02-13,96531275,Convention Booking,Zoey Tim,Banquet Only,Banquet size 50,Banquet only
+FSC Consultancy Pte Ltd,Malaysia,2019-02-15,96189313,Convention Booking,James Tim,Banquet Only,Banquet size 80,Banquet only
+PI ETA Consulting Pte Ltd,Malaysia,2019-02-18,98185478,Convention Booking,Joshua Tan,Banquet Only,Banquet size 60,Banquet only
+Joshua Consultanting Pte Ltd,Malaysia,2019-02-22,84373755,Convention Booking,Henry Koh,Banquet Only,Banquet size 90,Banquet only
+Alenu IT Business Solutions,Vietnam,2019-02-25,85463877,Convention Booking,William Toh,Banquet Only,Banquet size 30,Banquet only

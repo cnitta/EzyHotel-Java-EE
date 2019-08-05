@@ -1,0 +1,404 @@
+{
+	"info": {
+		"_postman_id": "9c50c2b2-7478-490f-8478-4a802ee05d87",
+		"name": "Account Management Module",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Customer Sign Up",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "bc0f8a66-cf79-4f45-8988-14a301818ef8",
+						"exec": [
+							"//This step requires manual intervention to click confirmation",
+							"pm.test(\"Customer Sign Up - Status code is 201\", function () {",
+							"    pm.response.to.have.status(201);",
+							"});",
+							"",
+							"pm.test(\"Customer Sign Up Response\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"you have signed up successfully! Please verify your membership via your email.\");",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\t\"firstName\": \"Bernice\",\r\n\t\t\"lastName\": \"Choy\",\r\n\t\t\"phoneNum\": \"96953579\",\r\n\t\t\"email\": \"bernicecpz@gmail.com\", \r\n\t\t\"birthDate\": \"29-03-1996\",\r\n\t\t\"hashedPassword\": \"4c61038cc593eb3f9e971d155227b96177ceece9cf3151c0e044ee302c98d809\"\t\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/EzyHotel-war/webresources/accounts/customerSignUp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EzyHotel-war",
+						"webresources",
+						"accounts",
+						"customerSignUp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customer Confirm Account",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "09d1eaf8-3c59-4557-ac65-70a552ddee34",
+						"exec": [
+							"//Note the link is dynamic, please refer to the link provided in the email",
+							"pm.test(\"Customer Confirm Membership - Status code is 202 (ACCEPTED)\", function () {",
+							"    pm.response.to.have.status(202);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/EzyHotel-war/webresources/accounts/confirmation/2FADB6316C5CF25216BC2771464329A37EF0ADAB5F1AAE5674E0D295CBA727C0/8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EzyHotel-war",
+						"webresources",
+						"accounts",
+						"confirmation",
+						"2FADB6316C5CF25216BC2771464329A37EF0ADAB5F1AAE5674E0D295CBA727C0",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customer Login",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "815b7808-382e-49a8-a07d-060062ea74dc",
+						"exec": [
+							"pm.test(\"Customer Login - Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Customer Login - Customer Profile\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.firstName).to.eql(\"Bernice\");",
+							"    pm.expect(jsonData.lastName).to.eql(\"Choy\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"identityString\": \"bernicecpz@gmail.com\",\n\t\"hashedPassword\": \"4c61038cc593eb3f9e971d155227b96177ceece9cf3151c0e044ee302c98d809\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/EzyHotel-war/webresources/accounts/customerLogin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EzyHotel-war",
+						"webresources",
+						"accounts",
+						"customerLogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Password Reset Request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c9d6744b-4d37-4889-bf62-8f76fa63fb1c",
+						"exec": [
+							"pm.test(\"Password Reset - Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Password Reset Request Message\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"A password reset email has been sent to you. Please check your email.\");",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 500ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(500);",
+							"    console.log(\"Response time: \" + pm.response.responseTime);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"identityString\" : \"bernicecpz@outlook.com\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/EzyHotel-war/webresources/accounts/passwordResetRequest/customer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EzyHotel-war",
+						"webresources",
+						"accounts",
+						"passwordResetRequest",
+						"customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Staff Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"bell_lim69\",\n\t\"hashedPassword\": \"10cfe464932ba1605172ea8ede94fc3139514f5390671be87ff136b58f3c9c69\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/EzyHotel-war/webresources/accounts/staffLogin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EzyHotel-war",
+						"webresources",
+						"accounts",
+						"staffLogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change Password",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "88bf67a5-316f-4947-a570-0b498f2d1465",
+						"exec": [
+							"pm.test(\"Change Password - Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Change Password Message\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"Password has been changed succesfully\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"currentPassword\": \"4c61038cc593eb3f9e971d155227b96177ceece9cf3151c0e044ee302c98d809\",\n\t\"newPassword\": \"7d1afd1a0ee1d173870adb2d64d26645912b4a07dbc89c9496a69765f9a7fd77\",\n\t\"confirmNewPassword\": \"7d1afd1a0ee1d173870adb2d64d26645912b4a07dbc89c9496a69765f9a7fd77\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/EzyHotel-war/webresources/accounts/changePassword/customer/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EzyHotel-war",
+						"webresources",
+						"accounts",
+						"changePassword",
+						"customer",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Password Reset (Customer)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "26c22b6c-41a7-4109-b8cd-c1cd244cd277",
+						"exec": [
+							"pm.test(\"Password Reset - Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Password Reset Message\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"You have successfully changed your password.\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"accessCode\" : \"5A76F3B34B7A1BF0EFA217AD7D2EF1D84BB6746DF2906901524330F62EADEECF\",\n\t\"customerId\" : 8,\n\t\"newPassword\" : \"7d1afd1a0ee1d173870adb2d64d26645912b4a07dbc89c9496a69765f9a7fd77\",\n\t\"confirmNewPassword\" : \"7d1afd1a0ee1d173870adb2d64d26645912b4a07dbc89c9496a69765f9a7fd77\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/EzyHotel-war/webresources/accounts/passwordReset/customer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EzyHotel-war",
+						"webresources",
+						"accounts",
+						"passwordReset",
+						"customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Password Reset (Staff)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "26c22b6c-41a7-4109-b8cd-c1cd244cd277",
+						"exec": [
+							"pm.test(\"Password Reset - Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Password Reset Message\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"You have successfully changed your password.\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"accessCode\" : \"5A76F3B34B7A1BF0EFA217AD7D2EF1D84BB6746DF2906901524330F62EADEECF\",\n\t\"customerId\" : 8,\n\t\"newPassword\" : \"7d1afd1a0ee1d173870adb2d64d26645912b4a07dbc89c9496a69765f9a7fd77\",\n\t\"confirmNewPassword\" : \"7d1afd1a0ee1d173870adb2d64d26645912b4a07dbc89c9496a69765f9a7fd77\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/EzyHotel-war/webresources/accounts/passwordReset/staff",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EzyHotel-war",
+						"webresources",
+						"accounts",
+						"passwordReset",
+						"staff"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

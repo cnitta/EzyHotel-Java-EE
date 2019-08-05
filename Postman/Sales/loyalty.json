@@ -1,0 +1,999 @@
+{
+	"info": {
+		"_postman_id": "017bdf4f-0a88-4c66-ac4a-e815155639df",
+		"name": "runner copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "11 - Create Room Booking - Individual (Member) Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cId\" : 11,\r\n    \"arrivalDate\" : \"16/02/2019 11:00\",\r\n    \"departureDate\" : \"17/02/2019 00:00\",\r\n    \"specialRequest\" : \"Give me 2 more towels\",\r\n    \"roomTypeCode\" : \"SUR\",\r\n    \"adultCount\" : 2,\r\n    \"childCount\" : 2,\r\n    \"custCardHolderName\" : \"Bernice Choy\",\r\n    \"hCustCreditCard\" : \"832FF200251444A3C55684A617A365CC12BEC9317D05BE65C96D92327087A18E5566\",\r\n    \"creditCardExpiryDate\" : \"2024-01\",\r\n\t\"priceRateTitle\": \"Standard rate\",\r\n    \"finalPrice\" : \"123.20\",\r\n    \"hotelName\" : \"Kent Ridge Hotel\",\r\n    \"isLogin\": \"true\",\r\n    \"bookingType\" : \"INDIVIDUAL_BOOKING\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/EzyHotel-war/webresources/onlineRoomBookings/createOnlineBooking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EzyHotel-war",
+						"webresources",
+						"onlineRoomBookings",
+						"createOnlineBooking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "12 - Create Room Booking - Individual (Member) Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cId\" : 12,\r\n    \"arrivalDate\" : \"18/02/2019 11:00\",\r\n    \"departureDate\" : \"19/02/2019 00:00\",\r\n    \"specialRequest\" : \"Give me 2 more towels\",\r\n    \"roomTypeCode\" : \"SUR\",\r\n    \"adultCount\" : 2,\r\n    \"childCount\" : 2,\r\n    \"custCardHolderName\" : \"Bernice Choy\",\r\n    \"hCustCreditCard\" : \"832FF200251444A3C55684A617A365CC12BEC9317D05BE65C96D92327087A18E5566\",\r\n    \"creditCardExpiryDate\" : \"2024-01\",\r\n\t\"priceRateTitle\": \"Standard rate\",\r\n    \"finalPrice\" : \"246.40\",\r\n    \"hotelName\" : \"Kent Ridge Hotel\",\r\n    \"isLogin\": \"true\",\r\n    \"bookingType\" : \"INDIVIDUAL_BOOKING\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/EzyHotel-war/webresources/onlineRoomBookings/createOnlineBooking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EzyHotel-war",
+						"webresources",
+						"onlineRoomBookings",
+						"createOnlineBooking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "13 - Create Room Booking - Individual (Member) Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cId\" : 13,\r\n    \"arrivalDate\" : \"16/02/2019 11:00\",\r\n    \"departureDate\" : \"17/02/2019 00:00\",\r\n    \"specialRequest\" : \"Give me 2 more towels\",\r\n    \"roomTypeCode\" : \"SUR\",\r\n    \"adultCount\" : 2,\r\n    \"childCount\" : 2,\r\n    \"custCardHolderName\" : \"Bernice Choy\",\r\n    \"hCustCreditCard\" : \"832FF200251444A3C55684A617A365CC12BEC9317D05BE65C96D92327087A18E5566\",\r\n    \"creditCardExpiryDate\" : \"2024-01\",\r\n\t\"priceRateTitle\": \"Standard rate\",\r\n    \"finalPrice\" : \"132.00\",\r\n    \"hotelName\" : \"Kent Ridge Hotel\",\r\n    \"isLogin\": \"true\",\r\n    \"bookingType\" : \"INDIVIDUAL_BOOKING\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/EzyHotel-war/webresources/onlineRoomBookings/createOnlineBooking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EzyHotel-war",
+						"webresources",
+						"onlineRoomBookings",
+						"createOnlineBooking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "14 - Create Room Booking - Individual (Member) Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cId\" : 14,\r\n    \"arrivalDate\" : \"11/02/2019 11:00\",\r\n    \"departureDate\" : \"12/02/2019 00:00\",\r\n    \"specialRequest\" : \"Give me 2 more towels\",\r\n    \"roomTypeCode\" : \"SUR\",\r\n    \"adultCount\" : 2,\r\n    \"childCount\" : 2,\r\n    \"custCardHolderName\" : \"Bernice Choy\",\r\n    \"hCustCreditCard\" : \"832FF200251444A3C55684A617A365CC12BEC9317D05BE65C96D92327087A18E5566\",\r\n    \"creditCardExpiryDate\" : \"2024-01\",\r\n\t\"priceRateTitle\": \"Standard rate\",\r\n    \"finalPrice\" : \"140.8\",\r\n    \"hotelName\" : \"Kent Ridge Hotel\",\r\n    \"isLogin\": \"true\",\r\n    \"bookingType\" : \"INDIVIDUAL_BOOKING\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/EzyHotel-war/webresources/onlineRoomBookings/createOnlineBooking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EzyHotel-war",
+						"webresources",
+						"onlineRoomBookings",
+						"createOnlineBooking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "15 - Create Room Booking - Individual (Member) Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cId\" : 15,\r\n    \"arrivalDate\" : \"03/02/2019 11:00\",\r\n    \"departureDate\" : \"05/02/2019 00:00\",\r\n    \"specialRequest\" : \"Give me 2 more towels\",\r\n    \"roomTypeCode\" : \"SUR\",\r\n    \"adultCount\" : 2,\r\n    \"childCount\" : 2,\r\n    \"custCardHolderName\" : \"Bernice Choy\",\r\n    \"hCustCreditCard\" : \"832FF200251444A3C55684A617A365CC12BEC9317D05BE65C96D92327087A18E5566\",\r\n    \"creditCardExpiryDate\" : \"2024-01\",\r\n\t\"priceRateTitle\": \"Standard rate\",\r\n    \"finalPrice\" : \"167.2\",\r\n    \"hotelName\" : \"Kent Ridge Hotel\",\r\n    \"isLogin\": \"true\",\r\n    \"bookingType\" : \"INDIVIDUAL_BOOKING\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/EzyHotel-war/webresources/onlineRoomBookings/createOnlineBooking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EzyHotel-war",
+						"webresources",
+						"onlineRoomBookings",
+						"createOnlineBooking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "16 - Create Room Booking - Individual (Member) Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cId\" : 16,\r\n    \"arrivalDate\" : \"20/02/2019 11:00\",\r\n    \"departureDate\" : \"21/02/2019 00:00\",\r\n    \"specialRequest\" : \"Give me 2 more towels\",\r\n    \"roomTypeCode\" : \"SUR\",\r\n    \"adultCount\" : 2,\r\n    \"childCount\" : 2,\r\n    \"custCardHolderName\" : \"Bernice Choy\",\r\n    \"hCustCreditCard\" : \"832FF200251444A3C55684A617A365CC12BEC9317D05BE65C96D92327087A18E5566\",\r\n    \"creditCardExpiryDate\" : \"2024-01\",\r\n\t\"priceRateTitle\": \"Standard rate\",\r\n    \"finalPrice\" : \"300.80\",\r\n    \"hotelName\" : \"Kent Ridge Hotel\",\r\n    \"isLogin\": \"true\",\r\n    \"bookingType\" : \"INDIVIDUAL_BOOKING\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/EzyHotel-war/webresources/onlineRoomBookings/createOnlineBooking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EzyHotel-war",
+						"webresources",
+						"onlineRoomBookings",
+						"createOnlineBooking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "17 - Create Room Booking - Individual (Member) Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cId\" : 17,\r\n    \"arrivalDate\" : \"14/02/2019 11:00\",\r\n    \"departureDate\" : \"15/02/2019 00:00\",\r\n    \"specialRequest\" : \"Give me 2 more towels\",\r\n    \"roomTypeCode\" : \"SUR\",\r\n    \"adultCount\" : 2,\r\n    \"childCount\" : 2,\r\n    \"custCardHolderName\" : \"Bernice Choy\",\r\n    \"hCustCreditCard\" : \"832FF200251444A3C55684A617A365CC12BEC9317D05BE65C96D92327087A18E5566\",\r\n    \"creditCardExpiryDate\" : \"2024-01\",\r\n\t\"priceRateTitle\": \"Standard rate\",\r\n    \"finalPrice\" : \"460.80\",\r\n    \"hotelName\" : \"Kent Ridge Hotel\",\r\n    \"isLogin\": \"true\",\r\n    \"bookingType\" : \"INDIVIDUAL_BOOKING\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/EzyHotel-war/webresources/onlineRoomBookings/createOnlineBooking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EzyHotel-war",
+						"webresources",
+						"onlineRoomBookings",
+						"createOnlineBooking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "18 - Create Room Booking - Individual (Member) Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cId\" : 18,\r\n    \"arrivalDate\" : \"22/02/2019 11:00\",\r\n    \"departureDate\" : \"23/02/2019 00:00\",\r\n    \"specialRequest\" : \"Give me 2 more towels\",\r\n    \"roomTypeCode\" : \"SUR\",\r\n    \"adultCount\" : 2,\r\n    \"childCount\" : 2,\r\n    \"custCardHolderName\" : \"Bernice Choy\",\r\n    \"hCustCreditCard\" : \"832FF200251444A3C55684A617A365CC12BEC9317D05BE65C96D92327087A18E5566\",\r\n    \"creditCardExpiryDate\" : \"2024-01\",\r\n\t\"priceRateTitle\": \"Standard rate\",\r\n    \"finalPrice\" : \"281.60\",\r\n    \"hotelName\" : \"Kent Ridge Hotel\",\r\n    \"isLogin\": \"true\",\r\n    \"bookingType\" : \"INDIVIDUAL_BOOKING\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/EzyHotel-war/webresources/onlineRoomBookings/createOnlineBooking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EzyHotel-war",
+						"webresources",
+						"onlineRoomBookings",
+						"createOnlineBooking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "19 - Create Room Booking - Individual (Member) Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cId\" : 19,\r\n    \"arrivalDate\" : \"14/02/2019 11:00\",\r\n    \"departureDate\" : \"15/02/2019 00:00\",\r\n    \"specialRequest\" : \"Give me 2 more towels\",\r\n    \"roomTypeCode\" : \"SUR\",\r\n    \"adultCount\" : 2,\r\n    \"childCount\" : 2,\r\n    \"custCardHolderName\" : \"Bernice Choy\",\r\n    \"hCustCreditCard\" : \"832FF200251444A3C55684A617A365CC12BEC9317D05BE65C96D92327087A18E5566\",\r\n    \"creditCardExpiryDate\" : \"2024-01\",\r\n\t\"priceRateTitle\": \"Standard rate\",\r\n    \"finalPrice\" : \"432.00\",\r\n    \"hotelName\" : \"Kent Ridge Hotel\",\r\n    \"isLogin\": \"true\",\r\n    \"bookingType\" : \"INDIVIDUAL_BOOKING\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/EzyHotel-war/webresources/onlineRoomBookings/createOnlineBooking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EzyHotel-war",
+						"webresources",
+						"onlineRoomBookings",
+						"createOnlineBooking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "20 - Create Room Booking - Individual (Member) Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cId\" : 20,\r\n    \"arrivalDate\" : \"29/03/2019 11:00\",\r\n    \"departureDate\" : \"30/03/2019 00:00\",\r\n    \"specialRequest\" : \"Give me 2 more towels\",\r\n    \"roomTypeCode\" : \"SUR\",\r\n    \"adultCount\" : 2,\r\n    \"childCount\" : 2,\r\n    \"custCardHolderName\" : \"Bernice Choy\",\r\n    \"hCustCreditCard\" : \"832FF200251444A3C55684A617A365CC12BEC9317D05BE65C96D92327087A18E5566\",\r\n    \"creditCardExpiryDate\" : \"2024-01\",\r\n\t\"priceRateTitle\": \"Standard rate\",\r\n    \"finalPrice\" : \"246.40\",\r\n    \"hotelName\" : \"Kent Ridge Hotel\",\r\n    \"isLogin\": \"true\",\r\n    \"bookingType\" : \"INDIVIDUAL_BOOKING\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/EzyHotel-war/webresources/onlineRoomBookings/createOnlineBooking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EzyHotel-war",
+						"webresources",
+						"onlineRoomBookings",
+						"createOnlineBooking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "21 - Create Room Booking - Individual (Member) Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cId\" : 21,\r\n    \"arrivalDate\" : \"12/02/2019 11:00\",\r\n    \"departureDate\" : \"14/02/2019 00:00\",\r\n    \"specialRequest\" : \"Give me 2 more towels\",\r\n    \"roomTypeCode\" : \"SUR\",\r\n    \"adultCount\" : 2,\r\n    \"childCount\" : 2,\r\n    \"custCardHolderName\" : \"Bernice Choy\",\r\n    \"hCustCreditCard\" : \"832FF200251444A3C55684A617A365CC12BEC9317D05BE65C96D92327087A18E5566\",\r\n    \"creditCardExpiryDate\" : \"2024-01\",\r\n\t\"priceRateTitle\": \"Standard rate\",\r\n    \"finalPrice\" : \"167.20\",\r\n    \"hotelName\" : \"Kent Ridge Hotel\",\r\n    \"isLogin\": \"true\",\r\n    \"bookingType\" : \"INDIVIDUAL_BOOKING\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/EzyHotel-war/webresources/onlineRoomBookings/createOnlineBooking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EzyHotel-war",
+						"webresources",
+						"onlineRoomBookings",
+						"createOnlineBooking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "22 - Create Room Booking - Individual (Member) Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cId\" : 22,\r\n    \"arrivalDate\" : \"17/02/2019 11:00\",\r\n    \"departureDate\" : \"18/02/2019 00:00\",\r\n    \"specialRequest\" : \"Give me 2 more towels\",\r\n    \"roomTypeCode\" : \"SUR\",\r\n    \"adultCount\" : 2,\r\n    \"childCount\" : 2,\r\n    \"custCardHolderName\" : \"Bernice Choy\",\r\n    \"hCustCreditCard\" : \"832FF200251444A3C55684A617A365CC12BEC9317D05BE65C96D92327087A18E5566\",\r\n    \"creditCardExpiryDate\" : \"2024-01\",\r\n\t\"priceRateTitle\": \"Standard rate\",\r\n    \"finalPrice\" : \"282.00\",\r\n    \"hotelName\" : \"Kent Ridge Hotel\",\r\n    \"isLogin\": \"true\",\r\n    \"bookingType\" : \"INDIVIDUAL_BOOKING\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/EzyHotel-war/webresources/onlineRoomBookings/createOnlineBooking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EzyHotel-war",
+						"webresources",
+						"onlineRoomBookings",
+						"createOnlineBooking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "23 - Create Room Booking - Individual (Member) Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cId\" : 23,\r\n    \"arrivalDate\" : \"23/02/2019 11:00\",\r\n    \"departureDate\" : \"24/02/2019 00:00\",\r\n    \"specialRequest\" : \"Give me 2 more towels\",\r\n    \"roomTypeCode\" : \"SUR\",\r\n    \"adultCount\" : 2,\r\n    \"childCount\" : 2,\r\n    \"custCardHolderName\" : \"Bernice Choy\",\r\n    \"hCustCreditCard\" : \"832FF200251444A3C55684A617A365CC12BEC9317D05BE65C96D92327087A18E5566\",\r\n    \"creditCardExpiryDate\" : \"2024-01\",\r\n\t\"priceRateTitle\": \"Standard rate\",\r\n    \"finalPrice\" : \"264.00\",\r\n    \"hotelName\" : \"Kent Ridge Hotel\",\r\n    \"isLogin\": \"true\",\r\n    \"bookingType\" : \"INDIVIDUAL_BOOKING\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/EzyHotel-war/webresources/onlineRoomBookings/createOnlineBooking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EzyHotel-war",
+						"webresources",
+						"onlineRoomBookings",
+						"createOnlineBooking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "24 - Create Room Booking - Individual (Member) Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cId\" : 24,\r\n    \"arrivalDate\" : \"17/02/2019 11:00\",\r\n    \"departureDate\" : \"19/02/2019 00:00\",\r\n    \"specialRequest\" : \"Give me 2 more towels\",\r\n    \"roomTypeCode\" : \"SUR\",\r\n    \"adultCount\" : 2,\r\n    \"childCount\" : 2,\r\n    \"custCardHolderName\" : \"Bernice Choy\",\r\n    \"hCustCreditCard\" : \"832FF200251444A3C55684A617A365CC12BEC9317D05BE65C96D92327087A18E5566\",\r\n    \"creditCardExpiryDate\" : \"2024-01\",\r\n\t\"priceRateTitle\": \"Standard rate\",\r\n    \"finalPrice\" : \"140.20\",\r\n    \"hotelName\" : \"Kent Ridge Hotel\",\r\n    \"isLogin\": \"true\",\r\n    \"bookingType\" : \"INDIVIDUAL_BOOKING\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/EzyHotel-war/webresources/onlineRoomBookings/createOnlineBooking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EzyHotel-war",
+						"webresources",
+						"onlineRoomBookings",
+						"createOnlineBooking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "25 - Create Room Booking - Individual (Member) Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cId\" : 25,\r\n    \"arrivalDate\" : \"19/02/2019 11:00\",\r\n    \"departureDate\" : \"20/02/2019 00:00\",\r\n    \"specialRequest\" : \"Give me 2 more towels\",\r\n    \"roomTypeCode\" : \"SUR\",\r\n    \"adultCount\" : 2,\r\n    \"childCount\" : 2,\r\n    \"custCardHolderName\" : \"Bernice Choy\",\r\n    \"hCustCreditCard\" : \"832FF200251444A3C55684A617A365CC12BEC9317D05BE65C96D92327087A18E5566\",\r\n    \"creditCardExpiryDate\" : \"2024-01\",\r\n\t\"priceRateTitle\": \"Standard rate\",\r\n    \"finalPrice\" : \"374.40\",\r\n    \"hotelName\" : \"Kent Ridge Hotel\",\r\n    \"isLogin\": \"true\",\r\n    \"bookingType\" : \"INDIVIDUAL_BOOKING\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/EzyHotel-war/webresources/onlineRoomBookings/createOnlineBooking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EzyHotel-war",
+						"webresources",
+						"onlineRoomBookings",
+						"createOnlineBooking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "26 - Create Room Booking - Individual (Member) Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cId\" : 26,\r\n    \"arrivalDate\" : \"14/02/2019 11:00\",\r\n    \"departureDate\" : \"15/02/2019 00:00\",\r\n    \"specialRequest\" : \"Give me 2 more towels\",\r\n    \"roomTypeCode\" : \"SUR\",\r\n    \"adultCount\" : 2,\r\n    \"childCount\" : 2,\r\n    \"custCardHolderName\" : \"Bernice Choy\",\r\n    \"hCustCreditCard\" : \"832FF200251444A3C55684A617A365CC12BEC9317D05BE65C96D92327087A18E5566\",\r\n    \"creditCardExpiryDate\" : \"2024-01\",\r\n\t\"priceRateTitle\": \"Standard rate\",\r\n    \"finalPrice\" : \"588.00\",\r\n    \"hotelName\" : \"Kent Ridge Hotel\",\r\n    \"isLogin\": \"true\",\r\n    \"bookingType\" : \"INDIVIDUAL_BOOKING\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/EzyHotel-war/webresources/onlineRoomBookings/createOnlineBooking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EzyHotel-war",
+						"webresources",
+						"onlineRoomBookings",
+						"createOnlineBooking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "27 - Create Room Booking - Individual (Member) Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cId\" : 27,\r\n    \"arrivalDate\" : \"22/02/2019 11:00\",\r\n    \"departureDate\" : \"23/02/2019 00:00\",\r\n    \"specialRequest\" : \"Give me 2 more towels\",\r\n    \"roomTypeCode\" : \"SUR\",\r\n    \"adultCount\" : 2,\r\n    \"childCount\" : 2,\r\n    \"custCardHolderName\" : \"Bernice Choy\",\r\n    \"hCustCreditCard\" : \"832FF200251444A3C55684A617A365CC12BEC9317D05BE65C96D92327087A18E5566\",\r\n    \"creditCardExpiryDate\" : \"2024-01\",\r\n\t\"priceRateTitle\": \"Standard rate\",\r\n    \"finalPrice\" : \"547.20\",\r\n    \"hotelName\" : \"Kent Ridge Hotel\",\r\n    \"isLogin\": \"true\",\r\n    \"bookingType\" : \"INDIVIDUAL_BOOKING\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/EzyHotel-war/webresources/onlineRoomBookings/createOnlineBooking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EzyHotel-war",
+						"webresources",
+						"onlineRoomBookings",
+						"createOnlineBooking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "28 - Create Room Booking - Individual (Member) Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cId\" : 28,\r\n    \"arrivalDate\" : \"16/02/2019 11:00\",\r\n    \"departureDate\" : \"17/02/2019 00:00\",\r\n    \"specialRequest\" : \"Give me 2 more towels\",\r\n    \"roomTypeCode\" : \"SUR\",\r\n    \"adultCount\" : 2,\r\n    \"childCount\" : 2,\r\n    \"custCardHolderName\" : \"Bernice Choy\",\r\n    \"hCustCreditCard\" : \"832FF200251444A3C55684A617A365CC12BEC9317D05BE65C96D92327087A18E5566\",\r\n    \"creditCardExpiryDate\" : \"2024-01\",\r\n\t\"priceRateTitle\": \"Standard rate\",\r\n    \"finalPrice\" : \"878.40\",\r\n    \"hotelName\" : \"Kent Ridge Hotel\",\r\n    \"isLogin\": \"true\",\r\n    \"bookingType\" : \"INDIVIDUAL_BOOKING\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/EzyHotel-war/webresources/onlineRoomBookings/createOnlineBooking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EzyHotel-war",
+						"webresources",
+						"onlineRoomBookings",
+						"createOnlineBooking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "29 - Create Room Booking - Individual (Member) Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cId\" : 29,\r\n    \"arrivalDate\" : \"26/02/2019 11:00\",\r\n    \"departureDate\" : \"27/02/2019 00:00\",\r\n    \"specialRequest\" : \"Give me 2 more towels\",\r\n    \"roomTypeCode\" : \"SUR\",\r\n    \"adultCount\" : 2,\r\n    \"childCount\" : 2,\r\n    \"custCardHolderName\" : \"Bernice Choy\",\r\n    \"hCustCreditCard\" : \"832FF200251444A3C55684A617A365CC12BEC9317D05BE65C96D92327087A18E5566\",\r\n    \"creditCardExpiryDate\" : \"2024-01\",\r\n\t\"priceRateTitle\": \"Standard rate\",\r\n    \"finalPrice\" : \"927.20\",\r\n    \"hotelName\" : \"Kent Ridge Hotel\",\r\n    \"isLogin\": \"true\",\r\n    \"bookingType\" : \"INDIVIDUAL_BOOKING\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/EzyHotel-war/webresources/onlineRoomBookings/createOnlineBooking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EzyHotel-war",
+						"webresources",
+						"onlineRoomBookings",
+						"createOnlineBooking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "30 - Create Room Booking - Individual (Member) Copy Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cId\" : 30,\r\n    \"arrivalDate\" : \"01/02/2019 11:00\",\r\n    \"departureDate\" : \"02/02/2019 00:00\",\r\n    \"specialRequest\" : \"Give me 2 more towels\",\r\n    \"roomTypeCode\" : \"SUR\",\r\n    \"adultCount\" : 2,\r\n    \"childCount\" : 2,\r\n    \"custCardHolderName\" : \"Bernice Choy\",\r\n    \"hCustCreditCard\" : \"832FF200251444A3C55684A617A365CC12BEC9317D05BE65C96D92327087A18E5566\",\r\n    \"creditCardExpiryDate\" : \"2024-01\",\r\n\t\"priceRateTitle\": \"Standard rate\",\r\n    \"finalPrice\" : \"823.20\",\r\n    \"hotelName\" : \"Kent Ridge Hotel\",\r\n    \"isLogin\": \"true\",\r\n    \"bookingType\" : \"INDIVIDUAL_BOOKING\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/EzyHotel-war/webresources/onlineRoomBookings/createOnlineBooking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EzyHotel-war",
+						"webresources",
+						"onlineRoomBookings",
+						"createOnlineBooking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "31 - Create Room Booking - Individual (Member) Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cId\" : 31,\r\n    \"arrivalDate\" : \"24/02/2019 11:00\",\r\n    \"departureDate\" : \"25/02/2019 00:00\",\r\n    \"specialRequest\" : \"Give me 2 more towels\",\r\n    \"roomTypeCode\" : \"SUR\",\r\n    \"adultCount\" : 2,\r\n    \"childCount\" : 2,\r\n    \"custCardHolderName\" : \"Bernice Choy\",\r\n    \"hCustCreditCard\" : \"832FF200251444A3C55684A617A365CC12BEC9317D05BE65C96D92327087A18E5566\",\r\n    \"creditCardExpiryDate\" : \"2024-01\",\r\n\t\"priceRateTitle\": \"Standard rate\",\r\n    \"finalPrice\" : \"940.80\",\r\n    \"hotelName\" : \"Kent Ridge Hotel\",\r\n    \"isLogin\": \"true\",\r\n    \"bookingType\" : \"INDIVIDUAL_BOOKING\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/EzyHotel-war/webresources/onlineRoomBookings/createOnlineBooking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EzyHotel-war",
+						"webresources",
+						"onlineRoomBookings",
+						"createOnlineBooking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "32 - Create Room Booking - Individual (Member) Copy Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cId\" : 32,\r\n    \"arrivalDate\" : \"16/02/2019 11:00\",\r\n    \"departureDate\" : \"17/02/2019 00:00\",\r\n    \"specialRequest\" : \"Give me 2 more towels\",\r\n    \"roomTypeCode\" : \"SUR\",\r\n    \"adultCount\" : 2,\r\n    \"childCount\" : 2,\r\n    \"custCardHolderName\" : \"Bernice Choy\",\r\n    \"hCustCreditCard\" : \"832FF200251444A3C55684A617A365CC12BEC9317D05BE65C96D92327087A18E5566\",\r\n    \"creditCardExpiryDate\" : \"2024-01\",\r\n\t\"priceRateTitle\": \"Standard rate\",\r\n    \"finalPrice\" : \"1117.20\",\r\n    \"hotelName\" : \"Kent Ridge Hotel\",\r\n    \"isLogin\": \"true\",\r\n    \"bookingType\" : \"INDIVIDUAL_BOOKING\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/EzyHotel-war/webresources/onlineRoomBookings/createOnlineBooking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EzyHotel-war",
+						"webresources",
+						"onlineRoomBookings",
+						"createOnlineBooking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "33 - Create Room Booking - Individual (Member) Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cId\" : 33,\r\n    \"arrivalDate\" : \"16/03/2019 11:00\",\r\n    \"departureDate\" : \"17/03/2019 00:00\",\r\n    \"specialRequest\" : \"Give me 2 more towels\",\r\n    \"roomTypeCode\" : \"SUR\",\r\n    \"adultCount\" : 2,\r\n    \"childCount\" : 2,\r\n    \"custCardHolderName\" : \"Bernice Choy\",\r\n    \"hCustCreditCard\" : \"832FF200251444A3C55684A617A365CC12BEC9317D05BE65C96D92327087A18E5566\",\r\n    \"creditCardExpiryDate\" : \"2024-01\",\r\n\t\"priceRateTitle\": \"Standard rate\",\r\n    \"finalPrice\" : \"963.2\",\r\n    \"hotelName\" : \"Kent Ridge Hotel\",\r\n    \"isLogin\": \"true\",\r\n    \"bookingType\" : \"INDIVIDUAL_BOOKING\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/EzyHotel-war/webresources/onlineRoomBookings/createOnlineBooking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EzyHotel-war",
+						"webresources",
+						"onlineRoomBookings",
+						"createOnlineBooking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "34 - Create Room Booking - Individual (Member) Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cId\" : 34,\r\n    \"arrivalDate\" : \"06/03/2019 11:00\",\r\n    \"departureDate\" : \"07/03/2019 00:00\",\r\n    \"specialRequest\" : \"Give me 2 more towels\",\r\n    \"roomTypeCode\" : \"SUR\",\r\n    \"adultCount\" : 2,\r\n    \"childCount\" : 2,\r\n    \"custCardHolderName\" : \"Bernice Choy\",\r\n    \"hCustCreditCard\" : \"832FF200251444A3C55684A617A365CC12BEC9317D05BE65C96D92327087A18E5566\",\r\n    \"creditCardExpiryDate\" : \"2024-01\",\r\n\t\"priceRateTitle\": \"Standard rate\",\r\n    \"finalPrice\" : \"1032.00\",\r\n    \"hotelName\" : \"Kent Ridge Hotel\",\r\n    \"isLogin\": \"true\",\r\n    \"bookingType\" : \"INDIVIDUAL_BOOKING\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/EzyHotel-war/webresources/onlineRoomBookings/createOnlineBooking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EzyHotel-war",
+						"webresources",
+						"onlineRoomBookings",
+						"createOnlineBooking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "35 - Create Room Booking - Individual (Member) Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cId\" : 35,\r\n    \"arrivalDate\" : \"18/03/2019 11:00\",\r\n    \"departureDate\" : \"19/03/2019 00:00\",\r\n    \"specialRequest\" : \"Give me 2 more towels\",\r\n    \"roomTypeCode\" : \"SUR\",\r\n    \"adultCount\" : 2,\r\n    \"childCount\" : 2,\r\n    \"custCardHolderName\" : \"Bernice Choy\",\r\n    \"hCustCreditCard\" : \"832FF200251444A3C55684A617A365CC12BEC9317D05BE65C96D92327087A18E5566\",\r\n    \"creditCardExpiryDate\" : \"2024-01\",\r\n\t\"priceRateTitle\": \"Standard rate\",\r\n    \"finalPrice\" : \"1100.80\",\r\n    \"hotelName\" : \"Kent Ridge Hotel\",\r\n    \"isLogin\": \"true\",\r\n    \"bookingType\" : \"INDIVIDUAL_BOOKING\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/EzyHotel-war/webresources/onlineRoomBookings/createOnlineBooking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EzyHotel-war",
+						"webresources",
+						"onlineRoomBookings",
+						"createOnlineBooking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "36 - Create Room Booking - Individual (Member) Copy Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cId\" : 36,\r\n    \"arrivalDate\" : \"14/02/2019 11:00\",\r\n    \"departureDate\" : \"17/02/2019 00:00\",\r\n    \"specialRequest\" : \"Give me 2 more towels\",\r\n    \"roomTypeCode\" : \"SUR\",\r\n    \"adultCount\" : 2,\r\n    \"childCount\" : 2,\r\n    \"custCardHolderName\" : \"Bernice Choy\",\r\n    \"hCustCreditCard\" : \"832FF200251444A3C55684A617A365CC12BEC9317D05BE65C96D92327087A18E5566\",\r\n    \"creditCardExpiryDate\" : \"2024-01\",\r\n\t\"priceRateTitle\": \"Standard rate\",\r\n    \"finalPrice\" : \"547.20\",\r\n    \"hotelName\" : \"Kent Ridge Hotel\",\r\n    \"isLogin\": \"true\",\r\n    \"bookingType\" : \"INDIVIDUAL_BOOKING\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/EzyHotel-war/webresources/onlineRoomBookings/createOnlineBooking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EzyHotel-war",
+						"webresources",
+						"onlineRoomBookings",
+						"createOnlineBooking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "37 - Create Room Booking - Individual (Member) Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cId\" : 37,\r\n    \"arrivalDate\" : \"16/01/2019 11:00\",\r\n    \"departureDate\" : \"19/01/2019 00:00\",\r\n    \"specialRequest\" : \"Give me 2 more towels\",\r\n    \"roomTypeCode\" : \"SUR\",\r\n    \"adultCount\" : 2,\r\n    \"childCount\" : 2,\r\n    \"custCardHolderName\" : \"Bernice Choy\",\r\n    \"hCustCreditCard\" : \"832FF200251444A3C55684A617A365CC12BEC9317D05BE65C96D92327087A18E5566\",\r\n    \"creditCardExpiryDate\" : \"2024-01\",\r\n\t\"priceRateTitle\": \"Standard rate\",\r\n    \"finalPrice\" : \"737.20\",\r\n    \"hotelName\" : \"Kent Ridge Hotel\",\r\n    \"isLogin\": \"true\",\r\n    \"bookingType\" : \"INDIVIDUAL_BOOKING\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/EzyHotel-war/webresources/onlineRoomBookings/createOnlineBooking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EzyHotel-war",
+						"webresources",
+						"onlineRoomBookings",
+						"createOnlineBooking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "38 - Create Room Booking - Individual (Member) Copy Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cId\" : 38,\r\n    \"arrivalDate\" : \"12/03/2019 11:00\",\r\n    \"departureDate\" : \"15/03/2019 00:00\",\r\n    \"specialRequest\" : \"Give me 2 more towels\",\r\n    \"roomTypeCode\" : \"SUR\",\r\n    \"adultCount\" : 2,\r\n    \"childCount\" : 2,\r\n    \"custCardHolderName\" : \"Bernice Choy\",\r\n    \"hCustCreditCard\" : \"832FF200251444A3C55684A617A365CC12BEC9317D05BE65C96D92327087A18E5566\",\r\n    \"creditCardExpiryDate\" : \"2024-01\",\r\n\t\"priceRateTitle\": \"Standard rate\",\r\n    \"finalPrice\" : \"878.40\",\r\n    \"hotelName\" : \"Kent Ridge Hotel\",\r\n    \"isLogin\": \"true\",\r\n    \"bookingType\" : \"INDIVIDUAL_BOOKING\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/EzyHotel-war/webresources/onlineRoomBookings/createOnlineBooking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EzyHotel-war",
+						"webresources",
+						"onlineRoomBookings",
+						"createOnlineBooking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "39 - Create Room Booking - Individual (Member) Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cId\" : 39,\r\n    \"arrivalDate\" : \"23/02/2019 11:00\",\r\n    \"departureDate\" : \"26/02/2019 00:00\",\r\n    \"specialRequest\" : \"Give me 2 more towels\",\r\n    \"roomTypeCode\" : \"SUR\",\r\n    \"adultCount\" : 2,\r\n    \"childCount\" : 2,\r\n    \"custCardHolderName\" : \"Bernice Choy\",\r\n    \"hCustCreditCard\" : \"832FF200251444A3C55684A617A365CC12BEC9317D05BE65C96D92327087A18E5566\",\r\n    \"creditCardExpiryDate\" : \"2024-01\",\r\n\t\"priceRateTitle\": \"Standard rate\",\r\n    \"finalPrice\" : \"659.60\",\r\n    \"hotelName\" : \"Kent Ridge Hotel\",\r\n    \"isLogin\": \"true\",\r\n    \"bookingType\" : \"INDIVIDUAL_BOOKING\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/EzyHotel-war/webresources/onlineRoomBookings/createOnlineBooking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EzyHotel-war",
+						"webresources",
+						"onlineRoomBookings",
+						"createOnlineBooking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "40 - Create Room Booking - Individual (Member) Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cId\" : 40,\r\n    \"arrivalDate\" : \"08/01/2019 11:00\",\r\n    \"departureDate\" : \"10/01/2019 00:00\",\r\n    \"specialRequest\" : \"Give me 2 more towels\",\r\n    \"roomTypeCode\" : \"SUR\",\r\n    \"adultCount\" : 2,\r\n    \"childCount\" : 2,\r\n    \"custCardHolderName\" : \"Bernice Choy\",\r\n    \"hCustCreditCard\" : \"832FF200251444A3C55684A617A365CC12BEC9317D05BE65C96D92327087A18E5566\",\r\n    \"creditCardExpiryDate\" : \"2024-01\",\r\n\t\"priceRateTitle\": \"Standard rate\",\r\n    \"finalPrice\" : \"927.20\",\r\n    \"hotelName\" : \"Kent Ridge Hotel\",\r\n    \"isLogin\": \"true\",\r\n    \"bookingType\" : \"INDIVIDUAL_BOOKING\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/EzyHotel-war/webresources/onlineRoomBookings/createOnlineBooking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EzyHotel-war",
+						"webresources",
+						"onlineRoomBookings",
+						"createOnlineBooking"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

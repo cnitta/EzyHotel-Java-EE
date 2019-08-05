@@ -1,0 +1,13 @@
+
+--INSERT HOTELS
+INSERT INTO IS4103.HOTELENTITY (ADDRESS, COUNTRY, DESCRIPTION, EMAIL, HOTELURL, "NAME", POLICIES, SERVICES, TELEPHONENUMBER) 
+	VALUES ('Tampines North Road Ave 8', 'Singapore', 'Hotel A', 'hotelA@krhg.com', 'http://localhost:81', 'Hotel A', NULL, NULL, NULL);
+INSERT INTO IS4103.HOTELENTITY (ADDRESS, COUNTRY, DESCRIPTION, EMAIL, HOTELURL, "NAME", POLICIES, SERVICES, TELEPHONENUMBER) 
+	VALUES ('Tampines North Road Ave 9', 'Singapore', 'Hotel B', 'hotelB@krhg.com', 'http://localhost:81', 'Hotel B', NULL, NULL, NULL);
+INSERT INTO IS4103.HOTELENTITY (ADDRESS, COUNTRY, DESCRIPTION, EMAIL, HOTELURL, "NAME", POLICIES, SERVICES, TELEPHONENUMBER) 
+	VALUES ('Tampines North Road Ave 10', 'Singapore', 'Hotel C', 'hotelC@krhg.com', 'http://localhost:81', 'Hotel C', NULL, NULL, NULL);
+INSERT INTO IS4103.HOTELENTITY (ADDRESS, COUNTRY, DESCRIPTION, EMAIL, HOTELURL, "NAME", POLICIES, SERVICES, TELEPHONENUMBER) 
+	VALUES ('Tampines North Road Ave 11', 'Singapore', 'Hotel D', 'hotelD@krhg.com', 'http://localhost:81', 'Hotel D', NULL, NULL, NULL);
+INSERT INTO IS4103.HOTELENTITY (ADDRESS, COUNTRY, DESCRIPTION, EMAIL, HOTELURL, "NAME", POLICIES, SERVICES, TELEPHONENUMBER) 
+	VALUES ('Tampines North Road Ave 12', 'Singapore', 'Hotel E', 'hotelE@krhg.com', 'http://localhost:81', 'Hotel E', NULL, NULL, NULL);
+

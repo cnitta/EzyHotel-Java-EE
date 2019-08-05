@@ -1,0 +1,16 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package util.enumeration;
+
+/**
+ *
+ * @author vincentyeo
+ */
+public enum MerchandiseStatusEnum {
+    ON_SALE,
+    NOT_ON_SALE,
+    SOLD_OUT    
+}
